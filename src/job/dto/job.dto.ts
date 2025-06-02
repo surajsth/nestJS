@@ -1,44 +1,43 @@
-import { IsArray, IsNotEmpty, IsNumber, IsOptional, IsString, IsUrl } from "class-validator";
+import { IsArray, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 
-export class PostJobDto{
-    @IsNotEmpty()
-    @IsString()
-    title: string;
+export class PostJobDto {
+  @IsNotEmpty()
+  @IsString()
+  title: string;
 
-    @IsNotEmpty()
-    @IsString()
-    description: string
+  @IsNotEmpty()
+  @IsString()
+  description: string;
 
-    @IsNotEmpty()
-    @IsArray()
-    requirements: string[]
+  @IsNotEmpty()
+  @IsArray()
+  requirements: string[];
 
-    @IsNotEmpty()
-    @IsNumber()
-    salary: number
+  @IsNotEmpty()
+  @IsNumber()
+  salary: number;
 
-    @IsNotEmpty()
-    @IsString()
-    location: string
+  @IsNotEmpty()
+  @IsString()
+  location: string;
 
-    @IsNotEmpty()
-    @IsString()
-    jobType: string
+  @IsNotEmpty()
+  @IsString()
+  jobType: string;
 
-    @IsNotEmpty()
-    @IsString()
-    experienceLevel: string
+  @IsNotEmpty()
+  @IsString()
+  experienceLevel: string;
 
-    @IsNotEmpty()
-    @IsNumber()
-    position: number
+  @IsNotEmpty()
+  @IsNumber()
+  position: number;
 
-    @IsNotEmpty()
-    @IsString()
-    companyId: string
+  @IsNotEmpty()
+  @IsString()
+  companyId: string;
 
-
-    @IsOptional()
-    @IsString()
-    createdById?: string
+  @IsOptional()
+  @IsString()
+  createdById?: string;
 }
